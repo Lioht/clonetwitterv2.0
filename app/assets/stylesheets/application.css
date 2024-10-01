@@ -1,0 +1,326 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .notice {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .new-tweet {
+    float: left;
+  }
+  
+  .search {
+    float: right;
+  }
+  
+  .btn-new-tweet {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn-new-tweet:hover {
+    background-color: #2980b9;
+  }
+  
+  .search-form {
+    text-align: right;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  #tweets {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  
+  .tweet-item {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-show {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-show:hover {
+    text-decoration: underline;
+  }
+  
+  .pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .pagination a {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .pagination a:hover {
+    background-color: #2980b9;
+  }
+  
+  .pagination .active {
+    background-color: #2980b9;
+  }
+
+  /* New_Tweet */
+
+  .title {
+    font-size: 36px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn-back {
+    background-color: #3c8ce7;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn-back:hover {
+    background-color: #c0392b;
+  }
+
+  .notice {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tweet-container {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-edit {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.btn-edit:hover {
+  background-color: #2980b9;
+}
+
+.btn-back {
+  background-color: #95a5a6;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn-back:hover {
+  background-color: #7f8c8d;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+/* Botones del Show*/
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .actions a,
+  .actions form {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .btn-edit {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn-edit:hover {
+    background-color: #2980b9;
+  }
+  
+  .btn-back {
+    background-color: #95a5a6;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn-back:hover {
+    background-color: #7f8c8d;
+  }
+  
+  .btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c0392b;
+  }
+
+  /* Edit */
+
+  .title {
+    font-size: 36px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .actions {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .actions a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+  
+
+  

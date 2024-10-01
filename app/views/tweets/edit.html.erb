@@ -1,0 +1,10 @@
+<h1 class="title">Editing Tweet</h1>
+
+<div class="form-container">
+  <%= render "form", tweet: @tweet %>
+</div>
+
+<div class="actions">
+  <%= link_to "Show this Tweet", @tweet, class: "btn" %>
+  <%= link_to "Back to Tweets", tweets_path, class: "btn" %>
+</div>

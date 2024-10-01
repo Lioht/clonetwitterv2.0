@@ -1,0 +1,33 @@
+<p class="notice"><%= notice %></p>
+
+<h1 class="title">
+  <%= link_to "Tweets", tweets_path(page: 1) %>
+</h1>
+
+<div class="header">
+  <div class="new-tweet">
+    <%= link_to "New Tweet", new_tweet_path, class: "btn-new-tweet" %>
+  </div>
+
+  <div class="search">
+    <%= form_with url: tweets_path, method: :get, class: "search-form" do |form| %>
+      <%= form.text_field :query_text, placeholder: 'Search Tweet', value: params[:query_text], class: "search-input" %>
+    <% end %>
+  </div>
+</div>
+
+<div id="tweets" class="tweets-list">
+  <% @tweets.each do |tweet| %>
+    <div class="tweet-item">
+      <%= render tweet %>
+      <p>
+        <%= link_to "Show this tweet", tweet, class: "btn-show" %>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<div class="pagination">
+  <%=raw pagy_nav(@pagy)%>
+</div>
+
